@@ -47,3 +47,20 @@ function setActive(clickedBtn) {
 
     clickedBtn.classList.add("btn-primary");
 }
+
+
+
+//delete button press korle card remove hobe and stats update hobe
+document.querySelectorAll(".delete-btn").forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        const card = this.closest(".card");
+
+        card.remove();
+
+        updateStats();
+
+    });
+
+});
