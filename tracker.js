@@ -3,10 +3,19 @@ function updateStats() {
         "#all-jobs-section .card"
     ).length;
 
+    const interviewCount = document.querySelectorAll(
+        ".status-badge.badge-success"
+    ).length;
+
+    const rejectedCount = document.querySelectorAll(
+        ".status-badge.badge-error"
+    ).length;
+
     document.getElementById("total-count").innerText = totalJobs;
     document.getElementById("job-count-text").innerText = `${totalJobs} jobs`;
+    document.getElementById("interview-count").innerText = `${interviewCount}`;
+    document.getElementById("rejected-count").innerText = `${rejectedCount}`;
 }
-updateStats();
 
 function showSection(sectionId) {
 

@@ -13,6 +13,7 @@ document.querySelectorAll(".interview-btn").forEach(button => {
             "badge-error"
         );
         badge.classList.add("badge-success");
+        updateStats();
 
     });
 
@@ -32,6 +33,7 @@ document.querySelectorAll(".rejected-btn").forEach(button => {
             "badge-soft"
         );
         badge.classList.add("badge-error");
+        updateStats();
     });
 
 });
