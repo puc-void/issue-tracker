@@ -48,6 +48,7 @@ function setActive(clickedBtn) {
     });
 
     clickedBtn.classList.add("btn-primary");
+    
 }
 
 

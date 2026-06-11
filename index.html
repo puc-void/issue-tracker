@@ -512,7 +512,9 @@
 
         <section id="interview-section" class="hidden">
 
-            <div class="bg-base-100 rounded-xl min-h-[500px] flex flex-col items-center justify-center">
+
+            <div id="interview-empty"
+                class="bg-base-100 rounded-xl min-h-[500px] flex flex-col items-center justify-center">
 
                 <i class="fa-solid fa-file-lines text-[80px] text-blue-400 mb-4"></i>
 
@@ -523,6 +525,11 @@
                 <p class="text-gray-500 mt-2 text-lg">
                     Check back soon for new job opportunities
                 </p>
+
+            </div>
+
+
+            <div id="interview-jobs-container" class="space-y-4 hidden">
 
             </div>
 
@@ -551,6 +558,7 @@
     </section>
     <script src="./tracker.js"></script>
     <script src="./btnChange.js"></script>
+    <script src="./interview.js"></script>
 
 </body>
 
