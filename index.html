@@ -84,17 +84,23 @@
 
             <div class="flex gap-2">
 
-                <button onclick="showSection('all')" class="btn btn-primary">
-                    All
-                </button>
+                <button
+    onclick="setActive(this); showSection('all')"
+    class="btn btn-primary nav-btn">
+    All
+</button>
 
-                <button onclick="showSection('interview')" class="btn">
-                    Interview
-                </button>
+<button
+    onclick="setActive(this); showSection('interview')"
+    class="btn nav-btn">
+    Interview
+</button>
 
-                <button onclick="showSection('rejected')" class="btn">
-                    Rejected
-                </button>
+<button
+    onclick="setActive(this); showSection('rejected')"
+    class="btn nav-btn">
+    Rejected
+</button>
 
             </div>
 
