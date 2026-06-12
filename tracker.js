@@ -17,7 +17,7 @@ function updateStats() {
     document.getElementById("rejected-count").innerText = `${rejectedCount}`;
 }
 
-
+let currentTab = "all";
 
 //filer korar jonno and tab show korar jonno
 function showSection(type) {
@@ -42,6 +42,7 @@ function showSection(type) {
     rejectedSection.classList.add("hidden");
 
     let visibleCount = 0;
+    currentTab = type;
 
     cards.forEach(card => {
 

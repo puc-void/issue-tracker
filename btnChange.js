@@ -10,7 +10,7 @@ document.querySelectorAll(".interview-btn").forEach(button => {
         badge.classList.remove(
             "badge-info",
             "badge-error",
-            "badge-soft",
+            "badge-soft"
         );
 
         badge.classList.add("badge-success");
@@ -18,6 +18,8 @@ document.querySelectorAll(".interview-btn").forEach(button => {
         card.dataset.status = "interview";
 
         updateStats();
+
+        showSection(currentTab); // refresh current tab
 
     });
 
@@ -44,6 +46,8 @@ document.querySelectorAll(".rejected-btn").forEach(button => {
         card.dataset.status = "rejected";
 
         updateStats();
+
+        showSection(currentTab); // refresh current tab
 
     });
 
