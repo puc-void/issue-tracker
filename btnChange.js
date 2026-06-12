@@ -3,40 +3,52 @@ document.querySelectorAll(".interview-btn").forEach(button => {
     button.addEventListener("click", function () {
 
         const card = this.closest(".card");
-
         const badge = card.querySelector(".status-badge");
 
         badge.innerText = "Interview";
+
         badge.classList.remove(
             "badge-info",
+            "badge-error",
             "badge-soft",
-            "badge-error"
         );
+
         badge.classList.add("badge-success");
+
+        card.dataset.status = "interview";
+
         updateStats();
 
     });
 
 });
+
+
 document.querySelectorAll(".rejected-btn").forEach(button => {
 
     button.addEventListener("click", function () {
 
         const card = this.closest(".card");
-
         const badge = card.querySelector(".status-badge");
 
         badge.innerText = "Rejected";
+
         badge.classList.remove(
             "badge-info",
             "badge-success",
             "badge-soft"
         );
+
         badge.classList.add("badge-error");
+
+        card.dataset.status = "rejected";
+
         updateStats();
+
     });
 
 });
+
 
 
 
@@ -48,7 +60,7 @@ function setActive(clickedBtn) {
     });
 
     clickedBtn.classList.add("btn-primary");
-    
+
 }
 
 
